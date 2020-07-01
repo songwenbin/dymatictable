@@ -70,16 +70,13 @@ public class JpatestApplication {
             newSession.save("Employes", employes);
         }
         tran.commit();
-        newSession.close();
 
         System.out.println("11111");
-        /*
         Query query = newSession.createQuery("from Employes");
         List list = query.getResultList();
         System.out.println("resultList: " + list);
         newSession.close();
 
-         */
     }
 
 }
